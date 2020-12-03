@@ -4706,7 +4706,7 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5; }
   body.bg-img {
-    background: url("../img/background.jpg");
+    background: #1f1e2e;
     background-attachment: fixed;
     background-size: cover; }
     body.bg-img::after {
@@ -4745,13 +4745,10 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #37c8ab;
-  position: relative; }
+  color: #37c8ab; }
 
 .heading-secondary {
-  position: absolute;
-  bottom: 5;
-  right: 16px;
+  display: inline-block;
   font-size: 2rem;
   color: #f1fbf9;
   font-style: italic; }
@@ -4774,5 +4771,4 @@ main {
 .float-text:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  color: #ffd500;
-  text-transform: uppercase; }
+  color: #ffd500; }
