@@ -48,13 +48,10 @@ header {
 
 .text-secondary {
   color: $secondary-color;
-  position: relative;
 }
 
 .heading-secondary {
-  position: absolute;
-  bottom: 5;
-  right: 16px;
+  display: inline-block;
   font-size: 2rem;
   color: $blue-white;
   font-style: italic;
@@ -89,6 +86,5 @@ main {
   &:hover {
     @include roboto_bold;
     color: #ffd500;
-    text-transform: uppercase;
   }
 }
