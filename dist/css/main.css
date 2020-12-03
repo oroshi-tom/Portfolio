@@ -4599,6 +4599,11 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; } }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -4621,8 +4626,6 @@ readers do not read off random characters that represent icons */
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
-  .menu-btn:hover {
-    transform: scale(1.2); }
 
 .menu {
   position: fixed;
@@ -4677,10 +4680,11 @@ readers do not read off random characters that represent icons */
     padding: 1rem 0;
     font-weight: 300;
     color: #f1fbf9;
-    text-decoration: none;
-    transition: all 0.5s ease-out; }
+    text-decoration: none; }
     .menu .nav-link:hover {
-      color: #37c8ab; }
+      color: #37c8ab;
+      padding: 0.5rem 0;
+      transition-duration: 0.2s; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.2s; }
@@ -4740,13 +4744,17 @@ header {
   z-index: 2;
   width: 100%; }
 
+.text-secondary {
+  color: #37c8ab;
+  position: relative; }
+
 .heading-secondary {
+  position: absolute;
+  bottom: 5;
+  right: 16px;
   font-size: 2rem;
   color: #f1fbf9;
   font-style: italic; }
-
-.text-secondary {
-  color: #37c8ab; }
 
 main {
   padding: 4rem;

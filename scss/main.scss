@@ -5,6 +5,7 @@
 
 @import "variables.scss";
 @import "mixins.scss";
+@import "mobile";
 @import "menu.scss";
 
 body {
@@ -45,13 +46,18 @@ header {
   width: 100%;
 }
 
+.text-secondary {
+  color: $secondary-color;
+  position: relative;
+}
+
 .heading-secondary {
+  position: absolute;
+  bottom: 5;
+  right: 16px;
   font-size: 2rem;
   color: $blue-white;
   font-style: italic;
-}
-.text-secondary {
-  color: $secondary-color;
 }
 
 main {
