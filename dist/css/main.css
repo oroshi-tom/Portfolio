@@ -1,8 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
+
 /*!
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
 .fa,
 .fas,
 .far,
@@ -4599,10 +4611,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-weight: 400; }
 
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; } }
+* {
+  box-sizing: border-box; }
 
 .menu-btn {
   position: absolute;
@@ -4698,6 +4708,28 @@ readers do not read off random characters that represent icons */
 .nav-item:nth-child(4) {
   transition-delay: 0.8s; }
 
+@media screen and (max-width: 768px) {
+  div.menu-nav,
+  ul.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    div.menu-nav.show,
+    ul.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/portrait.png");
+      background-size: cover;
+      height: 150px;
+      width: 150px; } }
+
 body {
   background: #333333;
   color: #fff;
@@ -4727,7 +4759,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 3rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -4749,7 +4781,8 @@ header {
 
 .heading-secondary {
   display: inline-block;
-  font-size: 2rem;
+  vertical-align: top;
+  font-size: 1rem;
   color: #f1fbf9;
   font-style: italic; }
 
@@ -4767,8 +4800,3 @@ main {
     overflow: hidden; }
     main.home h1 {
       margin-top: 20vh; }
-
-.float-text:hover {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  color: #ffd500; }
