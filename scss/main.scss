@@ -8,13 +8,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
 
 @import "base/normalize";
-
-@import "partials/menu";
+@import "abstracts/functions";
 
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: $body-font;
@@ -39,7 +38,7 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: set-text-color($primary-color);
   text-decoration: none;
 }
 
@@ -57,7 +56,7 @@ header {
   display: inline-block;
   vertical-align: top;
   font-size: 1rem;
-  color: $blue-white;
+  color: $light-text;
   font-style: italic;
 }
 
@@ -84,4 +83,9 @@ main {
       margin-top: 20vh;
     }
   }
+}
+.logo {
+  background: url(../img/logo.png);
+  width: 250px;
+  height: 250px;
 }
