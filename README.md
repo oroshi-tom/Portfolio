@@ -1,3 +1,3 @@
 # oroshi_ca
 Oroshi Web Development website
-(https://oroshi-tom.github.io/oroshi_ca/)
+(https://oroshi-tom.github.io/oroshi-ca/)
