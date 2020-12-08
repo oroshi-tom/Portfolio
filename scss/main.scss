@@ -1,91 +1,27 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "abstracts/mobile";
+// Modules
+@import "modules/functions";
+@import "modules/mixins";
+@import "modules/variables";
 
+// Vendors
 @import "vendors/fontawesome/fontawesome.scss";
 @import "vendors/fontawesome/solid.scss";
 @import "vendors/fontawesome/brands.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
 
+// Base
 @import "base/normalize";
-@import "abstracts/functions";
+@import "base/base";
 
-body {
-  @include background;
-  background: $primary-color;
-  color: set-text-color($primary-color);
-  min-height: 100%;
-  margin: 0;
-  font-family: $body-font;
-  line-height: 1.5;
-}
+// Layout
+@import "layout/footer";
+@import "layout/menu";
 
-// Headings
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-weight: 400;
+// Components
+@import "components/buttons";
 
-  &.lg-heading {
-    font-size: 3rem;
-  }
-  &.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, $amount: 2), 0.5);
-  }
-}
-
-a {
-  color: set-text-color($primary-color);
-  text-decoration: none;
-}
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-}
-
-.text-secondary {
-  color: $secondary-color;
-}
-
-.heading-secondary {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 1rem;
-  color: $light-text;
-  font-style: italic;
-}
-
-main {
-  padding: 4rem;
-  height: 100%;
-
-  .icons {
-    margin-top: 1rem;
-
-    a {
-      padding: 0.4rem;
-
-      &:hover {
-        color: $secondary-color;
-        @include easeOut;
-      }
-    }
-  }
-
-  &.home {
-    overflow: hidden;
-    h1 {
-      margin-top: 20vh;
-    }
-
-    .logo {
-      background: url("../img/logo.png") no-repeat;
-      height: 400px;
-    }
-  }
-}
+// Pages
+@import "pages/home";
+@import "pages/about";
+@import "pages/work";
+@import "pages/contact";

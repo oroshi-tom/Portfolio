@@ -1,22 +1,24 @@
 {
-  "name": "oroshi_ca",
+  "name": "oroshi-ca",
   "version": "1.0.0",
   "description": "Oroshi.ca Website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive"
+    "sass": "sass scss:dist/css --watch --style=compressed --no-source-map",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oroshi-tom/oroshi_ca.git"
   },
-  "author": "",
+  "author": "oroshi-tom",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/oroshi-tom/oroshi_ca/issues"
   },
-  "homepage": "https://github.com/oroshi-tom/oroshi_ca#readme",
+  "homepage": "https://oroshi-tom.github.io/oroshi-ca/",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "gh-pages": "^3.1.0",
+    "sass": "^1.30.0"
   }
 }
